@@ -1,10 +1,27 @@
 /*this is my style sheet
 website: site name v.1;
 author: rai;*/
-
- body {background-color: #ff530D;
+body {background-color: #ff530D;
+	background-image:url(images/myimage.jpg);
       color: #6C0CE8;
       font-family: serif;
       font-size: 30px;
       text-align: center;
       text-indent: 25px;}
+
+    p: font-family {
+       first-letter: 30px;3
+
+    }  
+
+	h1 {color: #fff;
+	      font-family: sans-serif;
+	      font-size: 50px;
+	     }
+
+    hr {border-color: #FFFFA8;}
+ 
+    #content {
+        width: 700px;
+        margin: 0 auto;
+    }
