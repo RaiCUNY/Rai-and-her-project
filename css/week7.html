@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Week 7 - Arrays, Objects and Loops</title>
+</head>
+<body>
+  <h1 id="headline">Storing Data in JavaScript</h1>
+  <ul id="list"></ul>
+<script>
+var books = ['The Thorn Books', 'The Shock Doctrine', 'Night of the Gun', 'Eleanor and Park'];
+
+for(var i = 0; i < books.length; i++){
+    var item = document.createElement('li');
+    var book = document.createTextNode(books[i]);
+    item.appendChild(book);
+    var container = document.getElementById('list');
+    container.appendChild(item);
+}
+document.getElementById('headline').innerHTML = 'My Favorite Books';
+
+
+console.log(books);
+console.log(books[2]);
+
+var favoriteBook = {
+    title: 'The Shock Doctrine',
+    author: 'Naomi Klein',
+    pubYear:'1997',
+    buyLink: 'http://amazon.com'
+
+}
+
+console.log(favoriteBook);
+console.log(favoriteBook.author);
+
+var favoriteBooks = [{
+    title: 'The Thorn Birds',
+    author: 'Colleen McCullough',
+    pubYear:'1997',
+    buyLink: 'http://amazon.com'
+
+},
+{
+    title: 'The Thorn Birds',
+    author: 'Colleen McCullough',
+    pubYear:'1997',
+    buylink: 'http://amazon.com'
+
+},
+{
+    title: 'Night of the Gun',
+    author: 'David Carr',
+    pubYear:'2008',
+    buylink: 'http://amazon.com'
+
+}]
+
+console.log(favoriteBooks);
+console.log(favoriteBooks[1].pubYear);
+
+</script>
+
+
+</body>
+</html>
